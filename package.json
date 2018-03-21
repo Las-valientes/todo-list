@@ -1,0 +1,31 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "ejercicio todo-list de práctica",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "browserify ./src/js/app.js -o ./public/bundle.js",
+    "stylus": "stylus ./src/css/main.styl -o ./public/main.css",
+    "dev": "npm run bundle && npm run stylus",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Las-valientes/todo-list.git"
+  },
+  "keywords": [
+    "to-do",
+    "css",
+    "js",
+    "stylus"
+  ],
+  "author": "Las-valientes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Las-valientes/todo-list/issues"
+  },
+  "homepage": "https://github.com/Las-valientes/todo-list#readme",
+  "devDependencies": {
+    "browserify": "^16.1.1"
+  }
+}
