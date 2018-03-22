@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/Las-valientes/todo-list#readme",
   "devDependencies": {
-    "browserify": "^16.1.1"
+    "browserify": "^16.1.1",
+    "stylus": "^0.54.5"
   }
 }
