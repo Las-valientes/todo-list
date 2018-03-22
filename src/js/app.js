@@ -16,7 +16,7 @@ const app = {
         const $todoCard = $('<div />').addClass('card-panel');
         const $todoCheckbox = $('<input type="checkbox" />').attr('id', todoId);
         const $todoText = $('<label />').attr('for', todoId).text(todo);
-        const $todoBntDelete = $('<button type="button"/>').addClass("btn right").text('x').click(app.removeTodo);
+        const $todoBntDelete = $('<button type="button"/>').addClass("btn right").text('x').click(deleteFunction);
 
         $todoCard.append($todoCheckbox);
         $todoCard.append($todoText);
@@ -26,14 +26,9 @@ const app = {
         $('#todos').append($todoContainer);
         
         app.counter = app.counter + 1;
-        console.log($todoBntDelete);
     },
-    counter: 0,
-    removeTodo(e) {
-        e.preventDefault();
-         $(this).parent().remove();
-         console.log($(this).parent())
-       }
+    counter: 0
 };
 
 $(document).ready(app.init);
+
