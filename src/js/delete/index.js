@@ -1,14 +1,11 @@
-const deleteFunction = {
-  // removeTodo(e) {
-  //   e.preventDefault();
-  //   $(this).parent().remove();
-  //   console.log($(this).parent())
-  // 
-  "hola" : {
-    alert() {
-      console.log("sii")
-    }
-  }
+const deleteFunction = (e) => { 
+    e.preventDefault();
+    console.log(e.target);
+    
+     $(e.target).parent().remove();
+     //console.log($(this).parent())
+    //alert("casi borra");
+  
 }
 
-module.export = deleteFunction;
+module.exports = deleteFunction;
