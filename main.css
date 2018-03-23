@@ -1,0 +1,9 @@
+h1 {
+  color: #fff;
+}
+h2 {
+  color: #f00;
+}
+input[type=checkbox]:checked + label {
+  text-decoration: line-through;
+}
