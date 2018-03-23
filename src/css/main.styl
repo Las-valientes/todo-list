@@ -1,5 +1,76 @@
 @import "progress-bar"
 @import "delete"
 
+color-gray = #D3D3D3
+color-light = #F0F0F0
+color-yellow = #f9d505
+color-aqua = #88dbe1
+color-purple = #8476b4
+color-tangerine = #f87a6b
+
+shadow = 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+
 input[type=checkbox]:checked + label
     text-decoration: line-through
+
+body
+    background color-light
+    height 74vh
+
+header
+    background color-gray
+    height 16vh!important
+    img
+        height 15vh
+        padding-left 3vw
+
+nav
+    background color-aqua!important
+    height 10vh!important
+    padding-left 3vw
+    button
+        img
+            height 4vh
+            margin 0
+    textarea
+        color black
+main
+    button
+        background none!important
+        border 2px solid @color!important
+        color color-purple!important
+
+button
+    box-shadow shadow
+
+
+.nav-btn
+    background-color color-yellow
+    border 1px solid color-gray
+    border-radius 5px
+    box-sizing border-box
+    color black
+    height 8vh!important
+    padding 0 4vh!important
+    margin 1vh 0 0 0!important
+
+.board
+    box-shadow shadow
+    box-sizing border-box
+    margin 1vh
+
+
+.collapsible-header
+    background none!important
+    padding 0!important
+
+.collapsible-body
+    background rgba(254, 254, 254, 0.5)!important
+    padding 0!important
+
+ul:not(.browser-default)
+    margin 0!important    
+
+.board-title
+    color color-purple
+    font-weight bold 

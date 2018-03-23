@@ -7,32 +7,46 @@
   <link rel="stylesheet" href="./main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <title>Todo-list</title>
+  <link rel="shortcut icon" href="assets/icon.ico" />
 
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-        <form class="col s12" id="todo-form">
-            <div class="row">
-                <div class="input-field col s12">
-                    <textarea id="todo" class="materialize-textarea"></textarea>
-                    <label for="todo">Tarea</label>
+  <header>
+    <img src="assets/logo.png" alt="">
+  </header>
+  <nav>
+    <ul class="collapsible">
+        <li>
+            <div class="collapsible-header">    
+                <button type="button" class="nav-btn"><img src="assets/addBoard.svg" alt="">AGREGAR TABLERO</button>
+            </div>
+            <div class="collapsible-body">
+                <div class="row">
+                    <form class="col s12" id="add-board-form">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="addTitleBoard" class="materialize-textarea"></textarea>
+                                <label for="addTitleBoard">Nombre del tablero</label>
+                            </div>
+                        </div>
+                        <button class="nav-btn" id="nav-btn-add">Agregar</button>
+                    </form>
                 </div>
             </div>
-            <button type="submit" class="waves-effect waves-light btn">Agregar</button>
-        </form>
-    </div>
-    <div class="row" id="todos">
-        <div class="col s12 m6 todo">
-            <div class="card-panel">
-                <input type="checkbox" id="tarea-1" />
-                <label for="tarea-1">
-                    Tarea 1.                        
-                </label>
-            </div>
+        </li>
+    </ul>  
+  </nav>
+  <!--                       <button type="button" class="nav-btn" id="add-board"><img src="assets/addBoard.svg" alt="">AGREGAR TABLERO</button>
+-->
+  <main>
+      <section>
+        <div class="container">
+            <div class="row"  id="boards-container"></div>
+            <div class="row" id="todos"></div>   
+            
         </div>
-    </div>   
-  </div>
+      </section>
+</main>
   <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>  
